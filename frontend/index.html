@@ -21,6 +21,9 @@
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <!-- Script
    ================================================== -->
@@ -48,6 +51,7 @@
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
 	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -61,7 +65,7 @@
                <li><a href="https://linkedin.com/in/ugwulo"><i class="fa fa-linkedin"></i></a></li>
                <li><a href="https://twitter.com/ndubuisi_ugwulo"><i class="fa fa-twitter"></i></a></li>
                <li><a href="https://ndubuisi.hashnode.dev"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://github.com/ugwulo/cloud-resume-challenge"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://github.com/ugwulo"><i class="fa fa-github"></i></a></li>
             </ul>
          </div>
       </div>
@@ -288,6 +292,79 @@
 
    </section> <!-- Resume Section End-->
 
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+      <div>
+         <div>
+            <h1 style="color: black" class="responsive-headline">PORTFOLIO</h1>
+         </div>
+         <!-- First Photo Grid-->
+         <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+               <a href="https://github.com/ugwulo/lemp-gke-cluster" target="_blank">
+                  <img src="https://raw.githubusercontent.com/ugwulo/cdn-server/main/portfolio-assets/microservice-sock-shop.jpg" alt="Sock Shop" style="width:100%" class="w3-hover-opacity">
+               </a>
+            <div class="w3-container w3-white">
+               <p><b>Sock Shop Microservice App Deployment</b></p>
+               <p>This project is part of my final assessment at AltSchool Africa which required me to implement the Sock Shop microservice app in a Kubernetes cluster while implementing a CI/CD Pipeline, Monitoring using Grafana & Prometheus, and also provisioning my infrastructure using Terraform and Ansible. I got to learn about the GCP platform while working on this project</p>
+            </div>
+            </div>
+
+            <div class="w3-third w3-container w3-margin-bottom">
+               <a href="https://github.com/PrestaShop/PrestaShop" target="_blank">
+                  <img src="https://raw.githubusercontent.com/ugwulo/cdn-server/main/portfolio-assets/prestashop-ecommerce.jpg" alt="Prestashop App" style="width:100%" class="w3-hover-opacity">
+               </a>
+            <div class="w3-container w3-white">
+               <p><b>Prestashop E-Commerce App Deployment</b></p>
+               <p>Prestashop is an open source e-commerce store built in PHP. I deployed this app as a fun project in Azure, I wanted to demonstrate hosting a webserver and database server in two seperate virtual instances in the same Virtual network, which is the ideal way to host production apps. I had fun working on this project. </p>
+            </div>
+            </div>
+
+            <div class="w3-third w3-container">
+               <a href="https://github.com/ugwulo/ec2-load-balancer" target="_blank">
+                  <img src="https://raw.githubusercontent.com/ugwulo/cdn-server/main/demo2.gif" alt="Load Balancer App" style="width:100%" class="w3-hover-opacity">
+               </a>
+            <div class="w3-container w3-white">
+               <p><b>AWS Application Load Balancer</b></p>
+               <p>In this project, I was tasked to deploy a highly available web server using an EC2 instance. This was part of my assessment in AltSchool to demonstrate my skills using IaC tools, here I used Ansible and Terraform to provision and deploy the application. I learned a lot about virtual private networks and subnetting in the cloud while working on this project. </p>
+            </div>
+            </div>
+         </div>
+         
+         <!-- Second Photo Grid-->
+         <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+               <a href="https://play.google.com/store/apps/details?id=nigeria.network.ussd.bank.cod" target="_blank">
+                  <img src="https://raw.githubusercontent.com/ugwulo/cdn-server/main/portfolio-assets/android-ussd-codes.jpg" alt="USSD Codes App" style="width:100%" class="w3-hover-opacity">
+               </a>
+            <div class="w3-container w3-white">
+               <p><b>USSD Codes Android App</b></p>
+               <p>I found there are numerous Unstructured Supplementary Service Data (USSD) codes for an individual to remember and often got a lot of folks asking for these codes daily, so I decided to work on this mobile app to make the various codes handy for fellow Nigerians. I used Kotlin to build this natively and it is available on Google Playstore.</p>
+            </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom">
+               <a href="https://resume.ugwulo.me" target="_blank">
+                  <img src="https://raw.githubusercontent.com/ugwulo/cdn-server/main/portfolio-assets/my-resume.jpg" alt="Resume Site" style="width:100%" class="w3-hover-opacity">
+               </a>
+            <div class="w3-container w3-white">
+               <p><b>Cloud Resume Challenge Azure</b></p>
+               <p>I built this app as part of Forrest Brazzel's <a href="https://cloudresumechallenge.dev/docs/the-challenge/azure" target="_blank">Cloud Resume Challenge in Azure.</a> This project was very tasking as I implemented a whole lot and had to figure out many things from building the serverless API, database binding, CI/CD, IaC provisioning and documentation. </p>
+            </div>
+            </div>
+            <div class="w3-third w3-container">
+               <a href="https://resume.ugwulo.me/404.html" target="_blank">
+                  <img src="https://.jpg" alt="Incoming..." style="width:100%" class="w3-hover-opacity">
+               </a>
+            <div class="w3-container w3-white">
+               <p><b>Incoming</b></p>
+               <p>Coming soon...</p>
+            </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Portfolio Section End -->
 
    <!-- footer
    ================================================== -->
