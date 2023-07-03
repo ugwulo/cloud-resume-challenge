@@ -1,4 +1,4 @@
-# #CloudREsumeChallenge: my resume in Azure
+# CloudResumeChallenge: my resume built serverlessly in Azure
 
 Here is my solution to the [Azure](https://cloudresumechallenge.dev/docs/the-challenge/azure/)
 
@@ -15,8 +15,11 @@ View it live [here](https://resume.ugwulo.me)
 - I am not great in frontend, I used this [template](https://www.styleshout.com/free-templates/ceevee/) to create my frontend. 
 - I'm also no JavaScript dev, but this [article](https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data) explains well and in a simple way how to use it to make an API call.
 
+
+## Frontend CI/CD Workflow
+It can be painful and time consuming to manually update, track and deploy code changes to production after testing.
+To overcome this, I needed to implement a CI/CD workflow using Github Actions.
+
 - TODO
-## Managing Automatic Billing Notification In Slack
-## Back-end resources
-## Testing Resources
-## CI/CD Resources
+## Monitoring Notifications In Slack
+## Testing
