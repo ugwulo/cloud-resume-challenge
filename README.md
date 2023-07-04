@@ -20,6 +20,10 @@ View it live [here](https://resume.ugwulo.me)
 It can be painful and time consuming to manually update, track and deploy code changes to production after testing.
 To overcome this, I needed to implement a CI/CD workflow using Github Actions.
 
+## Unit Testing
+In order to reduce errors and save hours of debugging, writing unit tests are important and it also helps with documentation
+All tests must pass before deployment
+I implemented a unit test for the backend API to...
+
 - TODO
 ## Monitoring Notifications In Slack
-## Testing
