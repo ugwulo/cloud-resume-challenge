@@ -3,7 +3,6 @@ from azure.cosmos import CosmosClient
 import os
 import requests
 from azure.cosmos import CosmosClient
-from .resume_counter import count_updater
 
 # Cosmos DB connection global vars
 endpoint = os.environ["COSMOS_ENDPOINT"]
@@ -33,4 +32,5 @@ def test_resume_counter():
     new_count = get_count_from_cosmosdb()
     
     # if new_count is greater than intial_count then our test passed
+    print(f"Initial Count: {initial_count} | New Count: {new_count}")
     assert new_count > initial_count

@@ -1,13 +1,16 @@
 name: deploy_backend
-
 # deploys when push is made from the backend folder
+
+
 on:
   push:
-      branches: [main]
+      branches: [ main ]
       paths:
       - 'backend/**'
 
 env:
+  COSMOS_ENDPOINT: ${{ secrets.COSMOS_ENDPOINT }} 
+  COSMOS_KEY: ${{ secrets.COSMOS_KEY }}
   AZURE_FUNCTIONAPP_NAME: 'ResumeCountFunc'
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'backend'
   PYTHON_VERSION: '3.9'
@@ -18,12 +21,12 @@ jobs:
     environment: dev
     steps:
     - name: 'Checkout GitHub Action'
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
 
     - name: 'Login to Azure via CLI'
       uses: azure/login@v1
       with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Setup Python ${{ env.PYTHON_VERSION }} Environment
       uses: actions/setup-python@v4
@@ -33,12 +36,15 @@ jobs:
     - name: 'Resolve Project Dependencies Using Pip'
       shell: bash
       run: |
-        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/ResumeCountFunc'
+        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
         python -m pip install --upgrade pip
         pip install -r requirements.txt --target=".python_packages/lib/site-packages"
+        pip install azure-functions
+        pip install azure-cosmos
+        pip install pytest
         popd
 
-    - name: 'Run Unit Test'
+    - name: Run Unit Test
       shell: bash
       run: |
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/ResumeCountFunc'
