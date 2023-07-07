@@ -1,29 +1,49 @@
-# CloudResumeChallenge: my resume built serverlessly in Azure
+# The Cloud Resume Challenge: my resume built serverlessly in Azure
 
-Here is my solution to the [Azure](https://cloudresumechallenge.dev/docs/the-challenge/azure/)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ugwulo/cdn-server/main/portfolio-assets/resume-architecture-diagram.jpg" alt="Architecture Diagram"/>
+</p>
+
+_icons credit: [icons8](https://icons8.com/)_
+
+
+## Inspiration
+As a Cloud and DevOps practitioner, I was bothered about building a personal website and a solid way to demonstrate my skills on Cloud and DevOps tools. I came across this challenge by Forrest Brazeal and I decided to give it a shot.
+Here is my solution to the [Azure](https://cloudresumechallenge.dev/docs/the-challenge/azure/) version.
 
 View it live [here](https://resume.ugwulo.me)
 
 
-## Prerequisites
+## Key Technologies Implemented
+
+The following technologies were implemented in this project:
+* Frontend
+  * I am not great at frontend, I used this [template](https://www.styleshout.com/free-templates/ceevee/) to create my frontend.
+  * Javascript fetch API
+  * Azure Blob storage
+
+* Backend
+  * Azure Function
+  * Python API
+
+* Database
+  * Azure Cosmos DB
+
+* Unit Test
+  * Pytest
+
+* CI/CD Workflow
+  * Github Actions
+
+* Monitoring
+  * Azure Monitor
+
+## TODO
+* Infrastructure as Code implementation
+  * Terraform
+
+## Helpful links
 
 - [GitHub Account](https://github.com/join)
-- [Azure Account](https://portal.azure.com/)
-
-` The front-end is a static site with HTML, CSS, and JavaScript. It's static and has a visitor counter. The visitor counter data is fetched via an API call to the Azure Function.`
-
-- I am not great in frontend, I used this [template](https://www.styleshout.com/free-templates/ceevee/) to create my frontend. 
-- I'm also no JavaScript dev, but this [article](https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data) explains well and in a simple way how to use it to make an API call.
-
-
-## Frontend CI/CD Workflow
-It can be painful and time consuming to manually update, track and deploy code changes to production after testing.
-To overcome this, I needed to implement a CI/CD workflow using Github Actions.
-
-## Unit Testing
-In order to reduce errors and save hours of debugging, writing unit tests are important and it also helps with documentation
-All tests must pass before deployment
-I implemented a unit test for the backend API to...
-
-- TODO
-## Monitoring Notifications In Slack
+- [Azure Account](https://azure.microsoft.com/free)
+- [Python](https://www.python.org/downloads/)
